@@ -104,7 +104,7 @@ a {
 
 /* ======================= Hero ======================= */
 .hero {
-    padding-top: 56px;
+    padding: 56px 0 65px;
     background: #fffcf4;
 }
 
@@ -122,6 +122,7 @@ a {
     height: 685px;
     border-radius: 20px;
     object-fit: cover;
+    vertical-align: bottom;
 }
 
 .hero-sumary {
@@ -215,6 +216,10 @@ a {
     line-height: 1.67;
     line-height: 64px;
     background: #ffb900;
+}
+
+.hero .see-courses-btn:hover {
+    background: #ffbb00d9;
 }
 
 .hero .watch-video {
