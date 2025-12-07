@@ -8,6 +8,7 @@ html {
 
 :root {
     --font-heading: "Sen", sans-serif;
+    --primary-color: #ffb900;
 }
 
 body {
@@ -16,6 +17,25 @@ body {
 }
 
 /* ======================= Common ======================= */
+.desc {
+    color: #5f5b53;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.67;
+}
+
+.sub-title {
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 3.8rem;
+    line-height: 1.263;
+    letter-spacing: -0.02rem;
+}
+
+.hero ~ * {
+    margin-top: 200px;
+}
+
 .btn {
     min-width: 118px;
     border-radius: 999px;
@@ -192,13 +212,6 @@ a {
     letter-spacing: -2%;
 }
 
-.hero .content-block .desc {
-    color: #5f5b53;
-    font-weight: 400;
-    font-size: 1.8rem;
-    line-height: 1.67;
-}
-
 .hero .content-block .desc:first-of-type {
     margin-top: 22px;
 }
@@ -266,4 +279,39 @@ a {
     font-weight: 600;
     font-size: 4.4rem;
     line-height: 1.227;
+}
+
+/* ======================= Courses ======================= */
+.courses-introduce {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.courses-desc {
+    width: 458px;
+    margin-top: 16px;
+}
+
+.courses .intro-right {
+    display: flex;
+    gap: 18px;
+}
+
+.courses .control-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    color: var(--primary-color);
+    background: transparent;
+    cursor: pointer;
+}
+
+.courses .control-btn:hover {
+    color: white;
+    background: var(--primary-color);
 }
